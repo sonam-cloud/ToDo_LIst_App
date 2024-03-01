@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <!-- Faicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <!-- To Do List -->
+  <main class="todoList">
+    <!-- Container -->
+    <div id="container">
+      <!-- Heading -->
+      <h1><span>To Do List</span> <img src="images/notepad.png"></h1>
+      <!-- Input Bar -->
+      <div id="toDo_form">
+        <i class="fa-regular fa-file-lines"></i>
+        <input type="text" name="input_box" id="addTaskInput" placeholder="Add your task..." />
+        <button id="addTaskBtn" onclick="addTask()"><i class="fa-solid fa-square-plus"></i></i></button>
+      </div>
+      <!-- Sub Heading -->
+      <h2>Task List</h2>
+      <!-- List Of Task -->
+      <ul id="list_of_task"></ul>
+      <!-- Total Tasks Count -->
+      <p id="task-counters">Total Tasks : <span id="totalTasks">0</span></p>
+    </div>
+  </main>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
